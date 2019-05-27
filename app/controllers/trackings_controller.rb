@@ -4,6 +4,7 @@ class TrackingsController < ApplicationController
   # GET /trackings
   # GET /trackings.json
   def index
+    @tracker = false
     @trackings = Tracking.all
   end
 
